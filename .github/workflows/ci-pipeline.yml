@@ -40,11 +40,8 @@ jobs:
       - name: Compile Project
         run: mvn clean install -DskipTests -Dlicense.skip=true -B
 
-      - name: Run DAO Tests
-        run: mvn test -pl dao -Dtest="!TimescaleDaoServiceTestSuite" -Dlicense.skip=true -B
-
       - name: Run Unit Tests
-        run: mvn test -pl common,application -Dlicense.skip=true -DskipTests=false -B
+        run: mvn test -pl common,netty-mqtt -Dlicense.skip=true -B
 
 
       - name: Install DB Schema

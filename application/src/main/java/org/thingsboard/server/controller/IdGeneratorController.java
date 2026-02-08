@@ -10,7 +10,7 @@ import java.util.UUID;
 public class IdGeneratorController extends BaseController {
 
     /**
-     * Génère un Identifiant Unique Universel (UUID).
+     * Génère un Identifiant Unique Universel (UUID) .
      */
     @GetMapping("/generate-uuid")
     public String generateUuid() {
